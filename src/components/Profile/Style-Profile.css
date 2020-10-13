@@ -1,0 +1,92 @@
+.profile {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.profile .profile-header {
+    padding: 25px 0 10px 0;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.profile .profile-header h1 {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.profile .user-info {
+    padding: 70px 30px 0 0;
+    min-width: 300px;
+    float: left;
+}
+
+.profile .user-info .user-name {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.profile .user-info .user-name h2 {
+    font-size: 22px;
+}
+
+.profile .user-info .user-name button {
+    padding: 0 10px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.profile .user-info .user-name button i {
+    font-size: 15px;
+    color: #909090;
+}
+
+.profile .avatar {
+    float: left;
+    padding-top: 50px;
+}
+
+.profile .avatar .image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    background: #ededed;
+}
+
+.profile .avatar .image .no-image {
+    text-align: center;
+    top: 50%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.profile .avatar .image .no-image:hover {
+    cursor: pointer;
+}
+
+.no-image i {
+    color: #666;
+}
+
+.no-image p {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+.profile .avatar .image input {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}

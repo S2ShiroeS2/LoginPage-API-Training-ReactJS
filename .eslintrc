@@ -1,0 +1,27 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"extends": ["react-app", "prettier"],
+	"plugins": ["react", "prettier"],
+	"parserOptions": {
+		"ecmaVersion": 2018
+	},
+	"rules": {
+		"prettier/prettier": [
+			"off",
+			{
+				"arrowParens": "avoid",
+				"semi": false,
+				"trailingComma": "none",
+				"singleQuote": true,
+				"tabWidth": 4,
+				"printWidth": 80,
+				"endOfLine": "auto",
+				"no-mixed-spaces-and-tabs": 1
+			}
+		],
+		"no-console": "warn"
+	}
+}

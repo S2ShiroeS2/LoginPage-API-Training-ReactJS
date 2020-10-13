@@ -1,0 +1,87 @@
+.category-add {
+	padding: 0 15px;
+	color: #333;
+}
+
+.add-header {
+	border-bottom: 1px solid #c3c3c3;
+	padding: 25px 0 10px 0;
+	overflow: auto;
+}
+
+.add-header h1 {
+	font-size: 36px;
+	font-weight: 400;
+	text-transform: capitalize;
+	float: left;
+}
+
+.add-header button {
+	float: right;
+	font-size: 14px;
+	line-height: 36px;
+	padding: 0 10px;
+	background-color: #1fbad6;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+}
+
+.add-form {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.add-form form {
+	width: 50%;
+	text-align: left;
+}
+
+.add-form form label {
+	font-size: 13px;
+	color: #333;
+	font-weight: 700;
+	display: block;
+	padding: 10px 0 5px 0;
+	text-transform: capitalize;
+}
+
+.add-form form input {
+	line-height: 34px;
+	padding: 0 10px;
+}
+
+.add-form form select {
+	padding: 8px 10px;
+	line-height: 36px;
+}
+
+.add-form form input,
+.add-form form select {
+	width: 100%;
+	color: #666;
+	display: block;
+	font-size: 14px;
+	border: 1px solid #d1d1d1;
+}
+
+.add-form form .button {
+	margin-top: 20px;
+}
+
+.add-form form .button button {
+	border: 1px solid #d1d1d1;
+	line-height: 34px;
+	padding: 0 10px;
+	margin-right: 3px;
+	border-radius: 4px;
+	background-color: #fff;
+	cursor: pointer;
+	color: #333;
+	outline: none;
+	text-transform: capitalize;
+}
