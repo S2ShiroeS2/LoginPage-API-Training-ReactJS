@@ -1,0 +1,295 @@
+.Admin {
+	color: #333;
+	padding: 0 15px;
+}
+
+.Admin-header {
+	border-bottom: 1px solid #c3c3c3;
+	padding: 25px 0 10px 0;
+}
+
+.Admin-header h1 {
+	text-align: left;
+	font-size: 36px;
+	font-weight: 400;
+}
+
+.Admin-container {
+	margin: 20px -15px;
+	overflow: visible;
+}
+
+.Admin-container .search-bar-container {
+	margin-top: 15px;
+	padding: 0 15px;
+	overflow: auto;
+}
+
+.search-bar-container .search-bar {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.wrap .search {
+	color: #555;
+}
+
+.wrap .search label {
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.wrap .search input[type="text"] {
+	margin-left: 5px;
+	font-size: 14px;
+	line-height: 34px;
+	outline: none;
+	border: 1px solid #c1c1c1;
+	border-radius: 4px;
+	width: 170px;
+	padding: 0 10px;
+	color: #555;
+}
+
+.wrap .search input[type="submit"] {
+	border: 1px solid #c1c1c1;
+	outline: none;
+	cursor: pointer;
+	border-radius: 4px;
+	padding: 0 10px;
+	line-height: 34px;
+	margin-left: 5px;
+	font-size: 12px;
+	color: #333;
+	background-color: #fff;
+}
+
+.search-bar-container .search-bar a {
+	width: 72.5%;
+}
+
+.search-bar-container .search-bar button {
+	float: right;
+	line-height: 35px;
+	padding: 0 10px;
+	font-size: 14px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 4px;
+	background-color: #1fbad6;
+	color: #fff;
+	cursor: pointer;
+}
+
+.Admin-container .Admin-table {
+	margin-top: 20px;
+	padding: 0 15px;
+}
+.Admin-container .Admin-table .selection {
+	min-width: 140px;
+	float: left;
+}
+.Admin-container .Admin-table .selection > select {
+	width: 140px;
+	padding: 7px 0 7px 10px;
+	line-height: 36px;
+	border: 1px solid #c1c1c1;
+	border-radius: 4px;
+	color: #555;
+	font-size: 14px;
+	cursor: pointer;
+}
+.Admin-container .Admin-table .export {
+	float: right;
+}
+.Admin-container .Admin-table button {
+	line-height: 33px;
+	font-size: 12px;
+	padding: 0 10px;
+	cursor: pointer;
+	background: #fff;
+	color: #333;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #c1c1c1;
+}
+
+.wrap-table {
+	margin-top: 20px;
+}
+
+.table > .wrap-table > table {
+	border-collapse: collapse;
+	overflow: visible;
+	width: 100%;
+}
+
+.table > .wrap-table > table thead,
+.table > .wrap-table > table tbody,
+.table > .wrap-table > table tr,
+.table > .wrap-table > table td {
+	border: 1px solid #c1c1c1;
+	border-collapse: collapse;
+}
+
+.table-head-row {
+	overflow: auto;
+	background: transparent;
+	cursor: pointer;
+}
+
+.table-body .table-head-row:nth-child(odd) {
+	background-color: #f9f9f9;
+}
+.table-body .table-head-row:nth-child(even):hover {
+	background-color: #f9f9f9;
+}
+
+.table .table-head td {
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.table-head-row .avatar {
+	width: 15%;
+}
+
+.table-head-row .avatar img {
+	max-width: 100%;
+	max-height: 90px;
+}
+.table-head-row .name, .table-head-row .email {
+	width: 20%;
+}
+
+.table-head-row > td {
+	padding: 10px;
+	font-size: 14px;
+	background: transparent;
+	vertical-align: top;
+	text-align: left;
+}
+
+.table-head-row .role {
+	width: 10%;
+}
+
+.table-head-row .match,
+.table-head-row .status,
+.table-head-row .action {
+	width: 10%;
+}
+
+.table-head-row .login-time {
+	width: 20%;
+}
+
+.table-head-row .status,
+.table-head-row .action {
+	text-align: center;
+}
+
+.table .table-body .action,
+.table .table-body .status {
+	width: 7.5%;
+}
+
+.table .table-body .action .option {
+	outline: none;
+}
+
+.table .table-body .action > div {
+	position: relative;
+}
+.table .table-body .action > div .more-option {
+	top: 50%;
+	transform: translateY(-50%);
+	right: 70px;
+	padding: 5px 3px;
+	background: #d1d1d1;
+	border-radius: 15px;
+	position: absolute;
+	text-align: center;
+	z-index: 10;
+	font-size: 12px;
+	color: #fff;
+	transition: all 0.3s ease 0s;
+}
+
+.table .table-body .action > div .more-option:hover {
+	display: block;
+}
+
+.table .table-body .action > div .more-option::after {
+	border-color: transparent transparent transparent #d1d1d1;
+	border-style: solid;
+	content: "";
+	display: block;
+	border-width: 9px 0 11px 17px;
+	height: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: -10px;
+	top: 60px;
+	width: 0;
+	z-index: -1;
+}
+
+.table .table-body .action img {
+	cursor: pointer;
+}
+
+.show-info {
+	float: left;
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+.show-info span {
+	font-weight: 700;
+}
+
+.paginate {
+	margin-top: 20px;
+	float: right;
+}
+
+.pagination {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.paginate .active {
+	background: #428bca;
+	color: #fff;
+}
+
+.pagination li {
+	display: inline-block;
+	line-height: 20px;
+	cursor: pointer;
+	background: #fff;
+	color: #428bca;
+	border: 1px solid #c1c1c1;
+}
+
+.pagination li a {
+	display: block;
+	outline: none;
+	padding: 5px 10px;
+}
+
+.pagination .previous {
+	margin-right: 10px;
+}
+
+.pagination .next {
+	margin-left: 10px;
+}
+
+.pagination .next,
+.pagination .previous {
+	border-right: 1px solid #c1c1c1;
+	font-size: 14px;
+}

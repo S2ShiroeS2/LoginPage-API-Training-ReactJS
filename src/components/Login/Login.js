@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import logo from "../../assets/images/kgp-logo.png";
 import userAPI from "../../apis/userAPI";
-import { USER_TOKEN, USER_NAME } from "../../constants/appConstants";
+import { USER_TOKEN, USER_NAME, USER_ID } from "../../constants/appConstants";
 import "./Login.css";
 
 const Login = () => {
@@ -35,10 +35,12 @@ const Login = () => {
 	const handleSubmitLogin = async (e) => {
 		e.preventDefault();
 		try {
-			const response = await userAPI.post(username, password);
+			const response = await userAPI.login(username, password);
+			console.log(response);
 			if (response.data) {
 				localStorage.setItem(USER_TOKEN, response.data.token);
 				localStorage.setItem(USER_NAME, response.data.user.firstName);
+				localStorage.setItem(USER_ID, response.data.user._id);
 				history.replace("/");
 				setMessage("");
 			} else {

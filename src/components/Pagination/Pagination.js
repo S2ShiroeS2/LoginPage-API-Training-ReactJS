@@ -6,7 +6,7 @@ export default function Pagination(props) {
 	const currentPage = props.currentPage;
 
 	const handlePagination = props.handlePagination;
-	
+
 	return (
 		<li className={count === currentPage ? "active" : ""}>
 			<a

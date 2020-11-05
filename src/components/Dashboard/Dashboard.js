@@ -7,6 +7,7 @@ import { USER_TOKEN } from "../../constants/appConstants";
 const Dashboard = (props) => {
 	const history = useHistory();
 	const [token, setToken] = useState([]);
+	var [isShow, setIsShow] = useState(false);
 	const logOut = () => {
 		localStorage.clear();
 		history.push("/login");
@@ -15,6 +16,10 @@ const Dashboard = (props) => {
 	const handleRoute = (path) => {
 		history.push(path);
 	};
+
+	const handleClick = () => {
+		setIsShow(!isShow);
+	}
 
 	useEffect(() => {
 		setToken(localStorage.getItem(USER_TOKEN));
@@ -50,7 +55,7 @@ const Dashboard = (props) => {
 								</div>
 							</a>
 							<div className="btn-menu">
-								<div className="btn">
+								<div className="btn" onClick={handleClick}>
 									<i className="fa fa-user"></i>
 									<p>User</p>
 									<div className="dropdown-icon">
@@ -60,8 +65,8 @@ const Dashboard = (props) => {
 										></i>
 									</div>
 								</div>
-								<div className="dropdown-content hide">
-									<a href="#/">
+								<div className={isShow === false ? "dropdown-content hide" : "dropdown-content show"}>
+									<a onClick={() => handleRoute("/admin")}>
 										<div className="dropdown-item">
 											<i
 												className="fa fa-user"
@@ -70,7 +75,7 @@ const Dashboard = (props) => {
 											<p>Admin</p>
 										</div>
 									</a>
-									<a href="#/">
+									<a onClick={() => handleRoute("/user")}>
 										<div className="dropdown-item">
 											<i
 												className="fa fa-user"

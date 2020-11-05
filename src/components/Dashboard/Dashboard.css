@@ -78,6 +78,10 @@ a {
     transition: all .3s ease 0s;
 }
 
+.dropdown-content a {
+	cursor: pointer;
+}
+
 .hide {
     height: 0px;
 }

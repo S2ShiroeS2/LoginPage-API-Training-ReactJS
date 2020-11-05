@@ -9,6 +9,11 @@ import {
 	Category,
 	InsertItem,
 	EditItem,
+	AdminList,
+	EditAdminInfo,
+	InsertAdmin,
+	UserList,
+	InsertUser,
 } from "../routes/routes";
 import RouteWrapper from "../routes/RouteWrapper";
 
@@ -50,7 +55,36 @@ export default function App() {
 				path="/category/edit"
 				component={EditItem}
 				layout={Dashboard}
-				// data={tags}
+			/>
+			<RouteWrapper
+				exact
+				path="/admin"
+				component={AdminList}
+				layout={Dashboard}
+			/>
+			<RouteWrapper
+				exact
+				path="/admin/edit"
+				component={EditAdminInfo}
+				layout={Dashboard}
+			/>
+			<RouteWrapper
+				exact
+				path="/admin/insert"
+				component={InsertAdmin}
+				layout={Dashboard}
+			/>
+			<RouteWrapper
+				exact
+				path="/user"
+				component={UserList}
+				layout={Dashboard}
+			/>
+			<RouteWrapper
+				exact
+				path="/user/insert"
+				component={InsertUser}
+				layout={Dashboard}
 			/>
 		</BrowserRouter>
 	);
